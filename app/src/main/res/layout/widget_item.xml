@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:weightSum="10">
+    <TextView
+        android:id="@+id/symbol"
+        style="@style/StockSymbolTextStyle"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/widgetPadding_left"
+        android:paddingStart="@dimen/widgetPadding_left"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_weight="3"
+        tools:text="GOOG" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="7.00"
+        android:gravity="right|center_vertical|center_horizontal">
+        <TextView
+            android:id="@+id/price"
+            style="@style/BidPriceTextStyleWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="@dimen/widgetPrice_marginRight"
+            android:layout_marginEnd="@dimen/widgetPrice_marginRight"
+            tools:text="1000.00" />
+        <TextView
+            android:id="@+id/change"
+            style="@style/PercentChangeTextStyleWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="@dimen/widget_changeStock_paddingLeft"
+            android:paddingStart="@dimen/widget_changeStock_paddingLeft"
+            android:paddingRight="@dimen/widget_changeStock_paddingRight"
+            android:paddingEnd="@dimen/widget_changeStock_paddingRight"
+            tools:text="100%" />
+    </LinearLayout>
+</LinearLayout>

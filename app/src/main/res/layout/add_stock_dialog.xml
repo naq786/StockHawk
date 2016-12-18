@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dialog_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/addstock_marginBottom"
+        android:layout_marginLeft="@dimen/addstock_marginLeft"
+        android:layout_marginStart="@dimen/addstock_marginLeft"
+        android:layout_marginRight="@dimen/addstock_marginRight"
+        android:layout_marginEnd="@dimen/addstock_marginRight"
+        android:layout_marginTop="@dimen/addstock_marginTop"
+        android:hint="@string/dialog_hint"
+        android:inputType="textCapCharacters" />
+
+</LinearLayout>
